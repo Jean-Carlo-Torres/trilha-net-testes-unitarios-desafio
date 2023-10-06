@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesLista
@@ -14,11 +18,12 @@ namespace TestesUnitarios.Desafio.Console.Services
             return contem;
         }
 
-        public List<int> MultiplicarNumerosLista(List<int> lista, int numero)
-        {
-            var listaMultiplicada = lista.Select(x => x * numero).ToList();
-            return listaMultiplicada;
-        }
+        public List<int> MultiplicarNumerosLista(List<int> lista)
+{
+    var listaMultiplicada = lista.Select(x => x * 2).ToList();
+    return listaMultiplicada;
+}
+
 
         public int RetornarMaiorNumeroLista(List<int> lista)
         {
